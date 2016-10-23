@@ -5,17 +5,7 @@ isUnique: Implement an algorithm to determine if a string has all unique charact
 // Time Complexity: O(n^2)
 // Auxiliary Complexity: O(1)
 const isUnique = str => {
-	var count = 0;
-	var pointer;
-	for (var i = 0; i < str.length; i++) {
-		pointer = str[i];
-		for (var j = i + 1; j < str.length; j++) {
-			if (pointer === str[j]) {
-				return false;
-			}
-		}
-	}
-	return true;
+	// Write your code here!
 };
 
 // Tests
@@ -32,28 +22,11 @@ Check Permutation: Given two strings, write a method to decide if one is apermut
  */
 
 const putIntoTable = (str, obj) => {
-	for (var i = 0; i < str.length; i++) {
-		if (!obj[str[i]]) {
-			obj[str[i]] = 1;
-		} else {
-			obj[str[i]]++;
-		}
-	}
-	return obj;
+	// Write your code here!
 }
  
 const checkPermutation = (str1, str2) => {
-	var lookUpTable = {};
-	if (str1.length !== str2.length) {
-		return false;
-	}
-	var firstStrInTable = putIntoTable(str1, lookUpTable);
-	var secondStrInTable = putIntoTable(str2, lookUpTable);
-
-	for (var key in lookUpTable) {
-		if (lookUpTable[key] % 2 !== 0) {
-			return false;
-		}
+	// Write your code here!
 	}
 	return true;
 
@@ -74,17 +47,7 @@ I: "Mr John Smith "
 O: "Mr%20John%20Smith"
  */
 const URLify = str => {
-	str = str.replace(/[' ']/gi,'%20');
-	return str;
-	// let results = '';
-	// for (var i = 0; i < str.length; i++) {
-	// 	if (str[i] === ' ') {
-	// 		results += '%20';
-	// 	} else {
-	// 		results += str[i];
-	// 	}
-	// }
-	// return results;
+	// Write your code here!
 };
 console.log(URLify("Let's go get some pizza!"))
 /*
